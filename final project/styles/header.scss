@@ -1,0 +1,19 @@
+@import "variables.scss";
+
+header {
+    //these rules apply to the header tag
+    flex-wrap: wrap;
+    background-color: $primary_color;
+    display: flex;
+    justify-content: space-between;
+
+    h1 {
+        padding-left: 40px;
+        line-height: 64px;
+        margin-bottom: 20px;
+        color: $secondary_color;
+    }
+    
+}
+
+

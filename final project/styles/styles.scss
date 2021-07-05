@@ -1,0 +1,37 @@
+@charset "utf-8";
+/*
+SASS @import
+
+use import to load other SASS documents
+into a single file
+
+this is useful for segregating your styles,
+making an easier to maintain code base
+eg: 
+- resets can be added when needed
+- one file can contain all your mixins, easy to share and reuse
+- variable declarations can be made in a single, centralized file
+- files can be divided by theme (eg: header styles, footer styles, typography, etc)
+
+*/
+
+//import variable values
+@import "variables.scss";
+
+//import your mixins  
+ @import "mixins.scss";
+
+//import resets
+@import "normalize.scss";
+@import "box_reset.scss";
+
+//import resets
+@import "header.scss";
+@import "page_content.scss";
+@import "pop.scss";
+@import "list.scss";
+@import "footer.scss";
+
+//import wide screen media query styles
+@import "pop.scss";
+

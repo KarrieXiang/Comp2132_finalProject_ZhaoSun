@@ -1,0 +1,32 @@
+@import "variables.scss";
+
+.list_container{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+  
+   h3{
+    margin-left: 40px;
+    text-align: left;
+    margin-bottom: 0px;
+    
+   };
+   
+   p {
+   color: $black_heading;
+   font-size: small;
+   margin-right: 20px;
+  
+   };
+  
+    ul{
+      margin-top: 0px;
+      padding-top: 0px;
+    }
+  }
+
+
+  .show{
+    display: none;
+  }
+  

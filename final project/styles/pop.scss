@@ -1,0 +1,22 @@
+@import "variables.scss";
+
+#pop-up {
+    position: fixed;
+    bottom: 50%;
+    left: 35%;
+    background-color: $primary_color;
+    border-radius: 6px;
+    padding: 30px;
+    border-top: solid 3px darkkhaki;
+    width: 350px;
+    z-index: 1;
+    color: white;
+  }
+  
+  #close-pop-up {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 0.65em;
+    cursor: pointer;
+  }

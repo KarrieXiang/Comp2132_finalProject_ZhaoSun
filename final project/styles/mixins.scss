@@ -1,0 +1,16 @@
+@import "variables.scss";
+
+@mixin rounded-shaded-box($xoffset, $yoffset, $rounded-corners, $background-color){
+    box-shadow:$xoffset $yoffset 10px #5d5d5d;	  
+    border-radius:$rounded-corners;    
+    background-color: $background-color;    
+}
+
+
+.middle-container-1 {
+    @include rounded-shaded-box(5px, 5px, 20px,$third_color);
+  }
+  
+  .middle-container-2 {
+    @include rounded-shaded-box(5px, 5px, 20px, $secondary_color);
+  }

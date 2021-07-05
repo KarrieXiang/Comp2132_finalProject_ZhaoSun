@@ -1,0 +1,13 @@
+@import "variables.scss";
+
+footer {
+    padding: 30px;
+    margin-top: 50px;
+    width: 100%;
+    background-color:$primary_color;
+
+    p{color: white;
+        line-height: 2;
+    }
+}
+
