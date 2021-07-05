@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="scripts/jquery-3.6.0.js" defer="defer"></script>
+    <script src="scripts/finalproject.js" defer="defer"></script>
+
+    <title>Comp2132_final_project</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="heading">Comp2132_final project Zhao Sun</h1>
+      </header>
+      <h2>Dice Game</h2>
+
+      <div class="gallery-container">
+        <div class="middle-container-1">
+          <h3>You</h3>
+          <div class="gallery" id="">
+            <div class="rowheader">Your Dice</div>
+            <div class="inner-container">
+              <div class="container1">
+                <p class="smalltext">Dice #1</p>
+                <img id="myDice1" src="" alt="" />
+              </div>
+              <div>
+                <p class="smalltext">Dice #2</p>
+                <img id="myDice2" src="" alt="" />
+              </div>
+            </div>
+
+            <div class="rowheader">Your Score</div>
+            <div class="inner-container">
+              <div class="left">
+                <p class="smalltext">Score this Round</p>
+                <p id="myScoreThisRound">Score</p>
+              </div>
+              <div>
+                <p class="smalltext">Total Score</p>
+                <p id="myTotalScore">Score</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="middle-container-2">
+          <h3>Opponent</h3>
+          <div class="gallery" id="">
+            <div class="rowheader">Opponent's Dice</div>
+            <div class="inner-container">
+              <div>
+                <p class="smalltext">Dice #1</p>
+                <img id="opponentsDice1" src="" alt="" />
+              </div>
+              <div>
+                <p class="smalltext">Dice #2</p>
+                <img id="opponentsDice2" src="" alt="" />
+              </div>
+            </div>
+
+            <div class="rowheader">Opponent's Score</div>
+            <div class="inner-container">
+              <div class="left">
+                <p class="smalltext">Score this Round</p>
+                <p id="opponentScoreThisRound">Score</p>
+              </div>
+              <div>
+                <p class="smalltext">Total Score</p>
+                <p id="opponentTotalScore">Score</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button id="btnNew">New Game</button>
+        <button id="btnRoll">Roll Dice</button>
+      </div>
+      <div class="list_container">
+        <h3>How to Play</h3>
+        <p id="hideHow">[hide]</p>
+      </div>
+      <ul id="listHow">
+        <li>to start, click the "Roll Dice" button</li>
+        <li>
+          to advance to the next round, click the "Roll Dice" button again
+        </li>
+        <li>
+          after three rounds, the game is over and the final score is calculated
+        </li>
+        <li>
+          if you want to play again , click the "New Game" button or refresh the
+          page
+        </li>
+      </ul>
+
+      <div class="list_container">
+        <h3>Rules</h3>
+        <p id="hideRules">[hide]</p>
+      </div>
+      <ul id="listRules">
+        <li>Each round, yo uand the computer both roll a pair of dice</li>
+        <li>Your score for that round will be based on the sum of the dice</li>
+        <li>if you roll doubles, then your score is multiplied by 2</li>
+        <li>Rolling a 1 will give you a score of 0 for that round</li>
+        <li>
+          The player who has the most points at the end of the three rounds is
+          the winner
+        </li>
+      </ul>
+
+      <aside class="show"id="pop-up">
+        <a id="close-pop-up">Close X</a>
+        <p class="show" id="youWin">“Congratulations! You win.</p>
+        <p class="show" id="equal">“You have the same score as the computer. Try again.</p>
+        <p class="show" id="youLose">“Sorry! The computer wins. Try again.</p>
+      </aside>
+
+      <footer>
+        <p>Zhao Sun</p>
+        <p>Comp2132</p>
+      </footer>
+    </div>
+  </body>
+</html>
